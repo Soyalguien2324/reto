@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:latest
 RUN apt-get update && apt-get install -y vim nano 1>/dev/null
 RUN apt-get install -y git 1>/dev/null
 RUN adduser reto 
