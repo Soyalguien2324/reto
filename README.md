@@ -2,7 +2,7 @@
 
 # Para descargar el reto
 ```
-sudo apt git docker-compose -y && clear
+sudo apt install git docker-compose -y && clear
 git clone https://github.com/Soyalguien2324/reto.git
 cd reto
 sudo docker build –t reto .
