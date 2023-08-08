@@ -5,7 +5,7 @@
 sudo apt install git docker-compose -y && clear
 git clone https://github.com/Soyalguien2324/reto.git
 cd reto
-sudo docker build Dockerfile
+sudo docker build .
 ```
 # Para empezar el reto
 ```
