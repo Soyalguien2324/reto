@@ -8,4 +8,4 @@ RUN chmod a+x reto
 RUN chmod o-w reto
 RUN chmod o-r reto
 RUN su reto
-RUN bash
+CMD ["bash"]
