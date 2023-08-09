@@ -7,7 +7,11 @@ RUN dpkg --configure -a
 RUN apt-get install -y git 1>/dev/null
 RUN adduser reto 
 RUN cd /home/reto 
-RUN echo -e '#!/bin/bash\n' >> reto && echo -e 'echo "cat /etc/passwd"\n' >> reto && echo 'cat /etc/passwd' >> reto
+RUN cat <<EOF>> reto
+#!/bin/bash
+echo 'cat /etc/passwd' 
+cat /etc/passwd
+EOF
 RUN chmod a+x reto 
 RUN chmod o-w reto
 RUN chmod o-r reto
